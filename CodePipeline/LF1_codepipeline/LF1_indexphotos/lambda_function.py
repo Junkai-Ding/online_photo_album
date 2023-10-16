@@ -68,9 +68,9 @@ def lambda_handler(event, context):
     
 
     # upload data to OpenSearch
-    endpoint = 'https://search-photos-s5qn4zliajyen6luy5roy52jae.us-east-1.es.amazonaws.com/photo/_doc'
+    endpoint = 'https://***.us-east-1.es.amazonaws.com/photo/_doc'
     headers = {'Content-Type': 'application/json'}
-    auth = ('master','Aws6666-')
+    auth = ('***','***')
     
     # region = 'us-east-1'
     # service = 'es'
