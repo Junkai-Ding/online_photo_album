@@ -12,8 +12,8 @@ def lambda_handler(event, context):
     print('query_text: ', query_text)
     client = boto3.client('lexv2-runtime')
     lex_response = client.recognize_text(
-            botId='D4DNYZJJFY', # MODIFY HERE
-            botAliasId='YAYFEVKV5R', # MODIFY HERE
+            botId='***', # MODIFY HERE
+            botAliasId='***', # MODIFY HERE
             localeId='en_US',
             sessionId='testuser',
             text=query_text)
@@ -35,8 +35,8 @@ def lambda_handler(event, context):
 
     print(labels)
 
-    endpoint = 'https://search-photos-s5qn4zliajyen6luy5roy52jae.us-east-1.es.amazonaws.com/'
-    auth = ('master','Aws6666-')
+    endpoint = 'https://***.us-east-1.es.amazonaws.com/'
+    auth = ('***','***')
     headers = {'Content-Type': 'application/json'}
 
     photo_paths = []
